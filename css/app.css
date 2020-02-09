@@ -1,0 +1,75 @@
+body {
+  /*background-image: url("./../img/clear-cloud.jpg");*/
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+#root {
+  background: #ffffffcc;
+  border-radius: 1em;
+  max-width: 600px;
+  margin: 100px auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), inset 0 -3px 0 rgba(0, 0, 0, 0.22);
+  padding: 2rem;
+  text-align: center;
+
+}
+
+.ui-container > img{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 100vw;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: opacity 2ms;
+}
+
+input, button {
+
+  border-radius:3px;
+  border: 2px solid deepskyblue;
+  height: 34px;
+  text-align: center;
+}
+
+input[type=text] {
+   width: 200px;
+}
+
+button {
+  height: 40px;
+  margin-left: 15px;
+  background: deepskyblue;
+  color: white;
+  border: 3px solid deepskyblue;
+}
+
+/* appear - on page load */
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+
+/* enter */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
